@@ -46,19 +46,50 @@ import React, { useState, useEffect } from 'react';
 // }
 import './App.css'
 export function App(props){
-  let a=5;
-  let b="Text";
-  return (
+console.log(useState("Hello "));
 
-    <div className='App'>
-      <h1 className='Main'> Hello  React Component </h1>
-      <p>This is tutorial of React JS  </p>
-      
-      <h2> A value is {a+2}</h2>
-      {b}
-    </div>
+const [count,setcount]=useState(0);
+console.log(count);
+console.log(setcount);
 
-  )
+const handleClick=()=>{
+
+  if(count<=0)
+  {
+    setcount(count==0);
+  }else 
+setcount(count+1);
+}
+
+const handleClickDec=()=>{
+  if(count<=0)
+  {
+    setcount(count==0);
+  }else 
+  setcount(count-1);
+
+}
+return (
+  <div>
+<h1>{count}</h1>
+<button onClick={handleClick}>+</button>
+
+<button onClick={handleClickDec}>-</button>
+</div>
+)
 }
 
 export default App;
+  // let a=5;
+  // let b="Text";
+  // return (
+
+  //   <div className='App'>
+  //     <h1 className='Main'> Hello  React Component </h1>
+  //     <p>This is tutorial of React JS  </p>
+      
+  //     <h2> A value is {a+2}</h2>
+  //     {b}
+  //   </div>
+
+//)

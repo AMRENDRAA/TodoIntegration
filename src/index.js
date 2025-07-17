@@ -4,16 +4,26 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import NewPage from './Newpage';
 import Mobile from './Mobile';
+import Form from './Form';
+import ClickTracker from './ClickTracker';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    {/* <App />
+     {/* <App /> */}
+
+     {/* <Form /> */}
+
+     
+     <ClickTracker />
   
    
-    <NewPage/> */}
-      <Mobile/>
-  </React.StrictMode>
+    {/* <NewPage/> */}
+      {/* <Mobile/>
+  */}
+
+  </React.StrictMode> 
 );
 
 
